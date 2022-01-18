@@ -1,0 +1,80 @@
+// Common Styles
+
+option[selected]{
+  background: linear-gradient(0deg, rgba(3, 91, 119, 0.05), rgba(3, 91, 119, 0.05)), #FFFFFF;
+}
+
+select{
+	padding-top: 10px;
+}
+
+.count{
+ border: none;
+ width: 14px;
+ font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+
+text-align: center;
+
+color: #035B77;
+}
+
+
+.vubor{
+margin-top: 2px;
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+
+text-align: right;
+
+color: #035B77;
+}
+
+a{
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+
+color: #272526;
+}
+
+option::before{
+  padding-right: 20px;
+  content: url(/src/noneChecked.svg);  
+}
+
+option[data-level="2"]::before{
+  padding-right: 40px;  
+}
+
+option[data-level="3"]::before{
+  padding-right: 60px;
+}
+
+option[data-level="4"]::before{
+  padding-right: 80px;
+}
+
+option[data-level="5"]::before{
+  padding-right: 100px;
+}
+
+option[data-level="6"]::before{
+  padding-right: 120px;
+}
+
+option[selected]::before{
+  content: url(/src/checked.svg);
+}
+
+.title {
+  text-align: center;
+}

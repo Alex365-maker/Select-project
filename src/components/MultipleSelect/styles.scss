@@ -1,0 +1,111 @@
+// Component Styles
+
+:root
+{
+	--text: "[A] - Продукция сельского хозяйства, лесного хозяйства рыбоводства и рыболовства";
+}
+
+.mainForm{
+	width: 640px;
+	margin-left: 30%;
+}
+
+.poz{
+	width: 87%;
+	display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  margin-top: 17px;
+}
+
+.boxButton{
+	display: none;
+	width: 90%;
+	margin-top: 630px;
+	padding-top: 11px;
+	background: #FAFAFA;
+
+box-shadow: 0px -1px 0px #D9D9D9;
+}
+
+.boxButton_active{
+	display: flex;
+justify-content: space-between;
+}
+
+.btnReset{
+
+width: 100px;
+height: 18px;
+margin-top: 5px;
+background-color: white;
+border: white;
+	font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+
+text-align: right;
+
+color: #000000;
+
+opacity: 0.6;
+}
+
+.btnget{
+	background: #035B77;
+border-radius: 4px;
+
+width: 121px;
+height: 40px;
+
+font-family: Source Sans Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 18px;
+
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+	}
+
+.multiple_select
+{
+	height: 37px;
+	width: 90%;
+	overflow: hidden;
+	-webkit-appearance: menulist;
+	position: relative;
+	border-left: 3px solid blue;
+}
+
+.multiple_select_default{
+	border-left: 1px solid black;
+}
+
+.multiple_select::before
+{
+	content: var(--text);
+	display: block;
+  margin-left: 5px;
+  margin-bottom: 30px;
+}
+.multiple_select_active
+{
+	overflow: visible !important;
+	outline: none;
+}
+.multiple_select option
+{
+	display: none;
+    min-height: 30px;
+	background-color: white;
+}
+.multiple_select_active option
+{
+	display: block;
+}
